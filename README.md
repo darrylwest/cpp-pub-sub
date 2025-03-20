@@ -10,7 +10,7 @@
 
 Simple.  
 
-* create a pub/sum instance
+* create a pub/sub instance
 * subscribe with your event callback
 * publish to the event
 * ignore the results
@@ -22,4 +22,4 @@ But what if the server is down?  Well, in parallel to the post, a database entry
 
 <hr/>
 
-###### 2025.02.18 | dpw
+###### 2025.03.20 | dpw

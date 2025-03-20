@@ -1,23 +1,11 @@
-cmake_minimum_required(VERSION 3.20)
+cmake_minimum_required(VERSION 3.30)
 project(pubsub VERSION 1.0.0 LANGUAGES CXX)
-
-# Include FetchContent
-include(FetchContent)
-
-# Fetch and make spdlog available
-# FetchContent_Declare(
-# spdlog
-#    GIT_REPOSITORY https://github.com/gabime/spdlog.git
-#    GIT_TAG v1.12.0  # Specify the version you want
-# )
-
-# FetchContent_MakeAvailable(spdlog)
 
 # Instead of FetchContent, use:
 find_package(spdlog REQUIRED)
 
 # Require C++20
-set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 

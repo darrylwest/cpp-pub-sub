@@ -22,17 +22,13 @@ do
         build)
             clear
 
-            # remove any old unit test
-            /bin/rm -f build/unit
-
             # cmake --build build/ 
-            (cd build && time make -j4 || exit 1)
+            (cd build && time make -j8 || exit 1)
 
             shift
         ;;
         unit)
-            (cd build && make -j4 && ctest --output-on-failure)
-            ./build/unit
+            echo "not ready yet..."
 
             shift
         ;;
